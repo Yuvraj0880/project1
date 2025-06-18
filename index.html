@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal Computer Institute | Admission Enquiry</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a1930;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #112240;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+    h1 {
+      text-align: center;
+      color: #ffbd39;
+    }
+    p {
+      text-align: center;
+      color: #dcdcdc;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 600;
+    }
+    input[type="text"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      background: #ffbd39;
+      color: #0a1930;
+      padding: 12px 20px;
+      border: none;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    input[type="submit"]:hover {
+      background: #ffa500;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Royal Computer & Coaching Institute</h1>
+  <p>Admission Enquiry & Free Demo Booking</p>
+
+  <form action="#" method="post">
+    <label>Full Name *</label>
+    <input type="text" name="name" required>
+
+    <label>Mobile Number *</label>
+    <input type="tel" name="phone" pattern="[0-9]{10}" required>
+
+    <label>Select Course *</label>
+    <select name="course" required>
+      <option value="">-- Select Course --</option>
+      <option value="MDCA">MDCA</option>
+      <option value="ADCA, PDA">ADCA, PDA</option>
+      <option value="Programming">Programming</option>
+      <option value="Web Development">Web Development</option>
+      <option value="Digital Marketing">Digital Marketing</option>
+      <option value="Graphics Designing">Graphics Designing</option>
+      <option value="AI Based Course">AI Based Course</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>Preferred Contact Mode</label>
+    <select name="contact_mode">
+      <option value="">-- Select --</option>
+      <option value="Phone Call">Phone Call</option>
+      <option value="WhatsApp">WhatsApp</option>
+      <option value="Visit Center">Visit Center</option>
+    </select>
+
+    <label>City / Location</label>
+    <input type="text" name="city">
+
+    <input type="submit" value="Submit Enquiry">
+  </form>
+
+  <div class="footer">
+    © 2025 Royal Computer & Coaching Institute
+  </div>
+</div>
+
+</body>
+</html>
